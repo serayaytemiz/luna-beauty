@@ -1,14 +1,11 @@
 ﻿import Link from 'next/link'
-import BookingFlow from '@/components/booking/BookingFlow'
-import { services, findServiceBySlug } from '@/lib/data'
+import { services } from '@/lib/data'
 import { business } from '@/lib/settings'
 import Reveal from '@/components/Reveal'
 import ServiceCard from '@/components/ServiceCard'
 import HeroSlider from '@/components/HeroSlider'
 
-export default function Home({ searchParams }: { searchParams: { [k: string]: string | string[] | undefined } }) {
-  const preselect = typeof searchParams?.service === 'string' ? searchParams.service : undefined
-  const preselected = findServiceBySlug(preselect)?.id
+export default function Home() {
 
   return (
     <main>
@@ -24,7 +21,7 @@ export default function Home({ searchParams }: { searchParams: { [k: string]: st
               Güzelliğinize değer katıyoruz. Cilt bakımı, lazer epilasyon ve daha fazlası için uzman ekibimizle yanınızdayız. Hızlıca randevu alın.
             </p>
             <div className="mt-8 flex items-center gap-3">
-              <a href="#randevu" className="btn btn-primary">Randevu Al</a>
+              <a href="/randevu" className="btn btn-primary">Randevu Al</a>
               <a href="#hizmetler" className="btn btn-ghost">Hizmetleri Gör</a>
             </div>
           </Reveal>
@@ -43,13 +40,6 @@ export default function Home({ searchParams }: { searchParams: { [k: string]: st
         </div>
       </section>
 
-      <section id="randevu" className="bg-gradient-to-b from-brand-50/40 to-gray-50 scroll-mt-24">
-        <div className="container-max py-12 sm:py-16">
-          <h2 className="section-title" style={{ fontFamily: 'var(--font-script), cursive' }}>Randevu</h2>
-          <Reveal className="mt-2 text-gray-600" variant="fade-in">3 adımda randevunuzu oluşturun.</Reveal>
-          <Reveal className="mt-6" variant="fade-up"><BookingFlow preselectedServiceId={preselected} /></Reveal>
-        </div>
-      </section>
 
       <section id="hakkimizda" className="container-max py-12 sm:py-16 scroll-mt-24">
         <h2 className="section-title" style={{ fontFamily: 'var(--font-script), cursive' }}>Hakkımızda</h2>

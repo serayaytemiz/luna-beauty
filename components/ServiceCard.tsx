@@ -3,7 +3,7 @@ import Link from 'next/link'
 import type { Service } from '@/lib/types'
 
 export default function ServiceCard({ service }: { service: Service }) {
-  const href = { pathname: '/', query: { service: service.slug }, hash: 'randevu' as const }
+  const href = { pathname: '/randevu', query: { service: service.slug } }
   return (
     <div className="card flex flex-col justify-between transition-shadow hover:shadow-soft">
       <div>

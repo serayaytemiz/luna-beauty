@@ -1,12 +1,12 @@
-"use client"
+﻿"use client"
 import Link from 'next/link'
 import { useEffect, useMemo, useState } from 'react'
 
 const LINKS = [
   { href: '#hizmetler', label: 'Hizmetler' },
-  { href: '#randevu', label: 'Randevu' },
-  { href: '#hakkimizda', label: 'Hakkımızda' },
-  { href: '#iletisim', label: 'İletişim' },
+  { href: '/randevu', label: 'Randevu' },
+  { href: '#hakkimizda', label: 'HakkÄ±mÄ±zda' },
+  { href: '#iletisim', label: 'Ä°letiÅŸim' },
 ]
 
 export default function NavBar() {
@@ -65,3 +65,4 @@ export default function NavBar() {
     </nav>
   )
 }
+
