@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Çizgisel kadın yüzü logo">
+  <g fill="none" stroke="#111827" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Saç çizgisi ve alın -->
+    <path d="M75 8c-12 10-22 14-30 33-6 14-7 31-4 43"/>
+    <!-- Ense ve boyun -->
+    <path d="M41 84c2 8 4 14 4 22"/>
+    <path d="M45 106c6-20 18-18 26-16"/>
+    <!-- Burun ve alın devamı -->
+    <path d="M78 20c10 10 20 23 20 36 0 18-14 30-34 28"/>
+    <path d="M86 46c-3 1-5 2-8 2"/>
+    <!-- Göz -->
+    <path d="M74 42c4 0 7 0 10 2"/>
+    <!-- Dudak -->
+    <path d="M78 60c4 2 8 2 12 0"/>
+    <path d="M78 60c3-3 7-3 12 0"/>
+    <!-- Yanak ve çene hattı -->
+    <path d="M58 50c10 10 28 10 36 6"/>
+  </g>
+</svg>
